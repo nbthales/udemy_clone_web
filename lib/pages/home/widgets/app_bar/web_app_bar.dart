@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:udemy_clone_web/pages/home/widgets/app_bar/web_app_bar_responsive_content.dart';
 
 class WebAppBar extends StatelessWidget {
-  const WebAppBar({Key? key}) : super(key: key);
+//const WebAppBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +15,7 @@ class WebAppBar extends StatelessWidget {
             'Flutter'
           ),
           const SizedBox(width: 32),
-          Expanded(
-            child: Container(),
-          ),
+          WebAppBarResponsiveContent(),
           IconButton(
               icon: Icon(Icons.shopping_cart),
               onPressed: (){},
