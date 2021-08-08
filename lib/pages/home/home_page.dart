@@ -3,6 +3,8 @@ import 'package:udemy_clone_web/breakpoints.dart';
 import 'package:udemy_clone_web/pages/home/widgets/app_bar/mobile_app_bar.dart';
 import 'package:udemy_clone_web/pages/home/widgets/app_bar/web_app_bar.dart';
 
+import 'widgets/sections/top_section.dart';
+
 class HomePage extends StatelessWidget {
 //const HomePage({Key? key}) : super(key: key);
   @override
@@ -29,7 +31,11 @@ class HomePage extends StatelessWidget {
 //              maxHeight: 300,
               ),
 //            child: Container(height: 1400, color: Colors.red),
-              child: ListView(),
+              child: ListView(
+                children: [
+                  TopSection(),
+                ],
+              ),
             ),
           ),
         );
