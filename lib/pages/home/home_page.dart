@@ -4,6 +4,7 @@ import 'package:udemy_clone_web/pages/home/widgets/app_bar/mobile_app_bar.dart';
 import 'package:udemy_clone_web/pages/home/widgets/app_bar/web_app_bar.dart';
 
 import 'widgets/sections/advantages_section.dart';
+import 'widgets/sections/courses_section.dart';
 import 'widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
@@ -37,6 +38,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   TopSection(),
                   AdvantagesSection(),
+                  CoursesSection(),
                 ],
               ),
             ),
