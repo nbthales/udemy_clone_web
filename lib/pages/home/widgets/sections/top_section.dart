@@ -10,6 +10,7 @@ class TopSection extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints){
         final maxWidth = constraints.maxWidth;
+        //modo web
         if(maxWidth >= 1200){
           return AspectRatio(
             aspectRatio: 3.2,
@@ -57,6 +58,7 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
+        //modo tablet
         if(maxWidth >= mobileBreakpoint){
           return SizedBox(
             height: 320,
@@ -105,7 +107,41 @@ class TopSection extends StatelessWidget {
             ),
           );
         }
-        return Container();
+        //modo mobile
+        return Column(
+          children: [
+            AspectRatio(
+                aspectRatio: 3.64,
+                child: Image.network('https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940', fit: BoxFit.cover),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Aprenda Flutter com este curso',
+                    style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Bora aprender Flutter com o professor Daniel Ciolfi! Cursos por apenas R\$29,90. Qualidade garantida.',
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  CustomSearchField(),
+                ],
+              ),
+            ),
+          ],
+        );
       },
     );
   }
