@@ -41,7 +41,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 ),
               ),
               if(constraints.maxWidth >= 400)...[
-                const SizedBox(width: 32),
+                const SizedBox(width: 10),
                 FlatButton(
                   onPressed: (){},
                   child: Text('Aprender'),
@@ -49,7 +49,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 ),
               ],
               if(constraints.maxWidth >= 500)...[
-                const SizedBox(width: 8),
+                const SizedBox(width: 4),
                 FlatButton(
                   onPressed: (){},
                   child: Text('Flutter'),
