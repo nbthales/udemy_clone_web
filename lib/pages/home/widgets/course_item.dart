@@ -20,6 +20,7 @@ class CourseItem extends StatelessWidget {
 //          print(constraints.biggest);
               return AutoSizeText(
                 'Criação de Apps Android e iOS com Flutter - Crie 16 Apps',
+                minFontSize: 3,
 //              maxLines: 2,
 //              minFontSize: 1,
                 style: TextStyle(
