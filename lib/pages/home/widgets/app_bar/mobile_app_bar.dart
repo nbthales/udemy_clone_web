@@ -6,6 +6,7 @@ class MobileAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      brightness: Brightness.dark,
       backgroundColor: Colors.black,
       title: Text('Flutter'),
       centerTitle: true,

@@ -7,6 +7,7 @@ class WebAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      brightness: Brightness.dark,
       backgroundColor: Colors.black,
       toolbarHeight: 72,
       title: Row(
