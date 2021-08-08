@@ -21,12 +21,18 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   ),
                   child: Row(
                     children: [
-                      IconButton(icon: Icon(Icons.search), onPressed: (){}),
+                      const SizedBox(width: 4),
+                      IconButton(
+                        icon: Icon(Icons.search),
+                        color: Colors.grey[500],
+                        onPressed: (){},
+                      ),
                       Expanded(
                         child: TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
-                            hintText: 'Pesquise alguma coisa aqui'
+                            hintText: 'Pesquise alguma coisa aqui',
+                            isCollapsed: true,
                           ),
                         ),
                       )
@@ -34,6 +40,22 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                   ),
                 ),
               ),
+              if(constraints.maxWidth >= 400)...[
+                const SizedBox(width: 32),
+                FlatButton(
+                  onPressed: (){},
+                  child: Text('Aprender'),
+                  textColor: Colors.white,
+                ),
+              ],
+              if(constraints.maxWidth >= 500)...[
+                const SizedBox(width: 8),
+                FlatButton(
+                  onPressed: (){},
+                  child: Text('Flutter'),
+                  textColor: Colors.white,
+                ),
+              ],
             ],
           );
         },
