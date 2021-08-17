@@ -1,16 +1,4 @@
-# udemy_clone_web
+Flutter version 2.2.3
+Dart version 2.13.4
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Alt Text](https://bitbucket.org/nbthales/udemy_clone_web/raw/a5acc5e7a8912f3ac74c7f3011c5ee6f14574da3/assets/images/udemy_clone.gif)
